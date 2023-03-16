@@ -1,0 +1,11 @@
+.IconRecurso{
+    color: var(--color-first);
+    height: 30px;
+    transition: 0.4s;
+}
+.IconRecurso:hover{
+    height: 35px;
+}
+.IconRecurso.active{
+    height: 35px;
+}

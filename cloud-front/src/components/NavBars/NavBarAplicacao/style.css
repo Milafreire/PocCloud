@@ -1,0 +1,9 @@
+.NavBarAplicacao{
+    width: 100%;
+    background-color: var(--color-third);
+}
+#logo_BlueShift{
+    padding-top: 5px;
+    padding-left: 35px;
+    height: 35px;
+}

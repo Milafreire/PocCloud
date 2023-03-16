@@ -1,0 +1,23 @@
+:root{
+    --global-fundo: #2CABE0;
+    --global-bar_color: #fff;
+}
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--global-fundo) #fff ;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--global-fundo);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--global-bar_color);
+    border-radius: 5px;
+}
