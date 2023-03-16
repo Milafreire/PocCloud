@@ -1,10 +1,9 @@
-import '../home.css';
-export default function Cabecalho()
+import blueshift from '../static/img/logos/site_geral/blueshift.svg'
 
-{
+export default function Cabecalho() {
     return<>
         <div className="Cabecalho">
-            <img className="logo" src={"https://blueshift.com.br/img/logo.svg"} alt="Logo" />
+            <img className="logo" src={blueshift} alt="Logo"/>
             <div ClassName="descricao"></div>
             <div className="lista">
         <nav>

@@ -1,0 +1,81 @@
+.ModalRecursoConfig{
+    position: absolute;
+    top: 10vh;
+    left: 30vh;
+    height: 450px;
+    width: 750px;
+    background-color: var(--color-zero);
+    border-radius: 20px;
+    z-index: 5;
+}
+.container {
+  display: grid !important;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header" "body" "footer";
+}
+
+.header {
+  grid-area: header;
+  border-radius: 10px 10px 0px 0px;
+  margin-top: -5px;
+  display: grid !important;
+  justify-content: space-between;
+  justify-items: center;
+  background-color: var(--color-ninth);
+  grid-template-columns: 10fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+.header img{
+    margin-top: 0px;
+}
+
+.body {
+    grid-area: body;
+    display: grid;
+}
+
+.footer {
+  grid-area: footer;
+  display: grid !important;
+  grid-template-columns: 3fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "DivFooter BotaoEnviar";
+}
+#X{
+    background-color: transparent;
+    height: 20px;
+    margin: 0px;
+    transition: 0.2s;
+}
+#X:hover{
+    margin: 0px;
+    opacity: 60%;
+}
+.DivFooter {
+    grid-area: DivFooter;
+    width: 100%;
+    height: 100%;
+}
+.BotaoEnviar{
+    position: relative;
+    z-index: 6;
+    font-weight: 700;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid var(--color-third) !important;
+    background-color: var(--color-fourth);
+    margin: 20px;
+    color: var(--color-zero);
+    transition: 0.3s;
+}
+.BotaoEnviar:hover{
+    cursor: pointer;
+    background-color: var(--color-third);
+    border: 2px solid var(--color-fourth) !important;
+    color: var(--color-fourth);
+}
